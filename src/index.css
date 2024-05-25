@@ -1,0 +1,13 @@
+body {
+	--joy-lineHeight-md: 1.4;
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed;
+}
+
+#root {
+	display: flex;
+	flex: auto;
+}
