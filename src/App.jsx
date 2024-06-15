@@ -12,44 +12,44 @@ const customColors = {
 	grey: '#333',
 	greyDark: '#1f1f1f',
 	blackOff: '#141414',
-	white: '#fff'
+	white: '#fff',
 };
 
 const customTheme = extendTheme({
 	fontSize: {
-		md: '0.875rem'
+		md: '0.875rem',
 	},
 	colorSchemes: {
 		light: {
 			palette: {
 				custom: {
-					...customColors
+					...customColors,
 				},
 				background: {
-					body: customColors.blackOff
+					body: customColors.blackOff,
 				},
 				text: {
 					primary: customColors.white,
-					secondary: customColors.white
+					secondary: customColors.white,
 				},
 				primary: {
 					solidColor: customColors.white,
 					solidBg: customColors.grey,
 					solidHoverBg: customColors.green,
-					solidActiveBg: customColors.greenDark
-				}
-			}
-		}
+					solidActiveBg: customColors.greenDark,
+				},
+			},
+		},
 	},
 	components: {
 		JoyLink: {
 			styleOverrides: {
 				root: {
-					marginInline: 0
-				}
-			}
-		}
-	}
+					marginInline: 0,
+				},
+			},
+		},
+	},
 });
 
 function App() {
@@ -58,14 +58,14 @@ function App() {
 			<CssBaseline />
 
 			<Header />
-			<Stack component='main' direction='row' sx={{ flex: 'auto' }}>
+			<Stack component="main" direction="row" sx={{ flex: 'auto' }}>
 				<Stack
-					direction='row'
+					direction="row"
 					sx={{
 						flex: 'auto',
 						justifyContent: 'center',
 						alignItems: 'center',
-						padding: '0 1rem'
+						padding: '0 1rem',
 					}}
 				>
 					<Profile />

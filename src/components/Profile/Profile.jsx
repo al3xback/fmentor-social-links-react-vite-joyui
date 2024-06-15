@@ -23,8 +23,8 @@ export default function Profile() {
 				'--Card-radius': '12px',
 				'@media (min-width: 48em)': {
 					maxWidth: '22.125rem',
-					'--Card-padding': '2.25rem'
-				}
+					'--Card-padding': '2.25rem',
+				},
 			}}
 		>
 			<img
@@ -32,15 +32,15 @@ export default function Profile() {
 				className={styles.image}
 				width={80}
 				height={80}
-				alt='Jessica Randall'
+				alt="Jessica Randall"
 			/>
-			<Stack spacing='0.375rem' sx={{ textAlign: 'center' }}>
+			<Stack spacing="0.375rem" sx={{ textAlign: 'center' }}>
 				<Typography
-					level='h2'
+					level="h2"
 					sx={{
 						letterSpacing: 'normal',
 						'--Typography-fontSize': '1.5rem',
-						'--joy-fontWeight-xl': 600
+						'--joy-fontWeight-xl': 600,
 					}}
 				>
 					Jessica Randall
@@ -48,7 +48,7 @@ export default function Profile() {
 				<Typography
 					sx={{
 						fontWeight: 700,
-						color: 'custom.green'
+						color: 'custom.green',
 					}}
 				>
 					London, United Kingdom
@@ -61,7 +61,7 @@ export default function Profile() {
 				sx={{
 					alignSelf: 'normal',
 					'--List-gap': '1rem',
-					'--List-padding': 0
+					'--List-padding': 0,
 				}}
 			>
 				{[
@@ -69,7 +69,7 @@ export default function Profile() {
 					'Frontend Mentor',
 					'LinkedIn',
 					'Twitter',
-					'Instagram'
+					'Instagram',
 				].map((item) => (
 					<ListItem
 						key={item}
@@ -78,21 +78,21 @@ export default function Profile() {
 							alignItems: 'normal',
 							'--ListItem-paddingY': 0,
 							'--ListItem-paddingLeft': 0,
-							'--ListItem-paddingRight': 0
+							'--ListItem-paddingRight': 0,
 						}}
 					>
 						<Link
-							href='#'
-							underline='none'
-							variant='solid'
+							href="#"
+							underline="none"
+							variant="solid"
 							sx={{
 								justifyContent: 'center',
 								p: '0.75rem',
 								fontWeight: 600,
 								'--joy-radius-xs': '8px',
 								'&:hover': {
-									color: 'custom.blackOff'
-								}
+									color: 'custom.blackOff',
+								},
 							}}
 						>
 							{item}
